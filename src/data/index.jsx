@@ -159,19 +159,19 @@ export const GUESTS = [
   },
 ];
 
-export const TEAM = [
-  {
-    index: 0,
-    img: premveer,
-    instagram: "",
-    linkedin: "",
-    twitter: "",
-  },
-  {
-    index: 1,
-    img: prabhnoor,
-    instagram: "",
-    linkedin: "",
-    twitter: "",
-  },
-];
+// export const TEAM = [
+//   {
+//     index: 0,
+//     img: premveer,
+//     instagram: "",
+//     linkedin: "",
+//     twitter: "",
+//   },
+//   {
+//     index: 1,
+//     img: prabhnoor,
+//     instagram: "",
+//     linkedin: "",
+//     twitter: "",
+//   },
+// ];
