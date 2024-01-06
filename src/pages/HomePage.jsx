@@ -24,10 +24,10 @@ const HomePage = () => {
     >
       {/* <Navbar></Navbar> */}
       <Hero></Hero>
-      <About></About>
+      {/* <About></About>
       <Theme></Theme>
       <Message></Message>
-      <Vidhyabhirama></Vidhyabhirama>
+      <Vidhyabhirama></Vidhyabhirama> */}
     </Box>
   );
 };
