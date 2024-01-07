@@ -4,17 +4,13 @@ import Heading from "../headings/Heading";
 
 const Theme = () => {
   return (
-    <Box
-      width={"100%"}
-      sx={{ border: "1px solid red" }}
-      py={4}
-      px={{ xs: 2, sm: 4, md: 6, lg: 8 }}
-    >
+    <Box width={"100%"} py={4} px={{ xs: 2, sm: 4, md: 6, lg: 8 }}>
       <Stack
         justifyContent={"center"}
         alignItems={"center"}
         width={"100%"}
         spacing={4}
+        textAlign={"center"}
       >
         <Heading name="Our Theme"></Heading>
         <Typography

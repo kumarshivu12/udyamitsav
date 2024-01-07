@@ -2,50 +2,62 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import Heading from "../headings/Heading";
 
-const Message = () => {
+const Message = ({ name, img, heading, message }) => {
   return (
-    <Box
-      width={"100%"}
-      sx={{ border: "1px solid red" }}
-      py={4}
-      px={{ xs: 2, sm: 4, md: 6, lg: 8 }}
-    >
+    <Box width={"100%"} py={4} px={{ xs: 2, sm: 4, md: 6, lg: 8 }}>
       <Stack
         justifyContent={"center"}
         alignItems={"center"}
         width={"100%"}
-        spacing={4}
+        spacing={6}
       >
-        <Heading name="Message from Director"></Heading>
-        <Grid container>
-          <Grid item lg={6} md={6} sm={12} xs={12}></Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12}>
-            <Typography
-              variant="body1"
-              fontFamily={"Playfair Display"}
-              color={"white"}
-              fontSize={"20px"}
-            >
-              Welcome to the 2nd Edition of the Entrepreneurship Fest at IIT
-              Jammu! Our theme, 'Ignite the Leader Within,' is a call to action.
-              In the world of entrepreneurship and innovation, leadership is the
-              spark that fuels success. This year, we are not only celebrating
-              entrepreneurship but also inaugurating our Leadership Bootcamp,
-              where we aim to empower and inspire the leaders of tomorrow.
-            </Typography>
-            <Typography
-              variant="body1"
-              fontFamily={"Playfair Display"}
-              color={"white"}
-              fontSize={"20px"}
-            >
-              We believe that every individual possesses the potential to lead,
-              and this fest is your platform to discover, cultivate, and unleash
-              that potential. Join us in this exciting journey of
-              self-discovery, empowerment, and transformation. Let's ignite the
-              leader within and shape a brighter, more innovative future
-              together.
-            </Typography>
+        <Heading name={`Message from ${name}`}></Heading>
+        <Grid container width={"100%"}>
+          <Grid
+            item
+            lg={7}
+            md={7}
+            sm={12}
+            xs={12}
+            justifySelf={"center"}
+            alignSelf={"center"}
+            textAlign={"center"}
+          >
+            <Stack spacing={4}>
+              <Typography
+                variant="body1"
+                fontFamily={"Playfair Display"}
+                color={"white"}
+                fontSize={"20px"}
+                fontWeight={700}
+              >
+                {heading}
+              </Typography>
+              <Typography
+                variant="body1"
+                fontFamily={"Playfair Display"}
+                color={"white"}
+                fontSize={"20px"}
+              >
+                {message}
+              </Typography>
+            </Stack>
+          </Grid>
+          <Grid
+            item
+            lg={5}
+            md={5}
+            sm={12}
+            xs={12}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Box width={{ xs: "60%", md: "40%" }} height={"auto"}>
+              <img src={img} style={{ width: "100%", height: "100%" }} />
+            </Box>
           </Grid>
         </Grid>
       </Stack>

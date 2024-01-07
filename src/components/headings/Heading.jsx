@@ -15,7 +15,6 @@ const Heading = ({ name }) => {
         maxWidth: "90%",
         height: "auto",
         // aspectRatio: 6,
-        border: "1px solid yellow",
         textAlign: "center",
       }}
       px={12}

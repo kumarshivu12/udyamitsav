@@ -1,10 +1,9 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 import RegisterButton from "../buttons/RegisterButton";
 import udyamitsav from "../../assets/main/udyamitsav.png";
 import bg from "../../assets/main/background.png";
-import cloud from "../../assets/main/cloud.png";
-import cloud2 from "../../assets/main/cloud2.png";
+
 const Hero = () => {
   return (
     <Stack
@@ -21,6 +20,7 @@ const Hero = () => {
         position: "relative",
       }}
       spacing={10}
+      px={{ xs: 2, sm: 4, md: 6, lg: 8 }}
     >
       <Box
         sx={{
@@ -39,36 +39,6 @@ const Hero = () => {
       </Box>
       <Box width={{ xs: "50%", lg: "25%" }} sx={{ zIndex: 2 }}>
         <RegisterButton name="Register Now"></RegisterButton>
-      </Box>
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: 0,
-          right: 0,
-          zIndex: 1,
-        }}
-      >
-        <img src={cloud} />
-      </Box>
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          transform: "scaleX(-1)",
-          zIndex: 1,
-        }}
-      >
-        <img src={cloud} />
-      </Box>
-      <Box
-        sx={{
-          position: "absolute",
-          bottom: 0,
-          zIndex: 1,
-        }}
-      >
-        <img src={cloud2} />
       </Box>
     </Stack>
   );

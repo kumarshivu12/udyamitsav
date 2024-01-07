@@ -42,7 +42,7 @@ const SponsorPage = () => {
             color={"white"}
             fontFamily={"Playfiar Display"}
           >
-            Title Sponsor
+            Event Sponsor
           </Typography>
           <Box
             gap={6}
