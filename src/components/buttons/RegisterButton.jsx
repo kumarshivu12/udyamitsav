@@ -4,7 +4,11 @@ import { Link } from "react-router-dom";
 
 const RegisterButton = ({ name }) => {
   return (
-    <Link to="#" target="_blank" style={{ textDecoration: "none" }}>
+    <Link
+      to="https://forms.gle/eCzHrpPrs38bcBgF6"
+      target="_blank"
+      style={{ textDecoration: "none" }}
+    >
       <button className="btn" type="button">
         <Typography
           fontFamily={"Playfair Display"}
