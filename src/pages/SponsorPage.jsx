@@ -6,6 +6,7 @@ import pizzawings from "../assets/sponsors/pizzawings.png";
 import dpeddlers from "../assets/sponsors/dpeddlers.png";
 import thekacoffee from "../assets/sponsors/thekacoffee.png";
 import xverse from "../assets/sponsors/xverse.png";
+import symbol from "../assets/sponsors/symbol.png";
 import background from "../assets/sponsors/background.jpeg";
 import { Link } from "react-router-dom";
 import Heading from "../components/headings/Heading";
@@ -69,6 +70,15 @@ const SponsorPage = () => {
                 <img
                   src={quilbolt}
                   alt="tquilbolt"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </Link>
+            </Box>
+            <Box width={{ xs: "90%", sm: "45%", md: "30%", lg: "20%" }}>
+              <Link to="https://www.symbolab.com/" target="_blank">
+                <img
+                  src={symbol}
+                  alt="symbol lab"
                   style={{ width: "100%", height: "100%" }}
                 />
               </Link>
