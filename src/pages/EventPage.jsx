@@ -5,6 +5,7 @@ import register from "../assets/events/register.png";
 import { Link } from "react-router-dom";
 import { EVENTS } from "../data";
 import Heading from "../components/headings/Heading";
+import Navbar from "../components/navbar/Navbar";
 
 const EventPage = () => {
   return (
@@ -14,85 +15,88 @@ const EventPage = () => {
         minHeight: "100vh",
         backgroundImage: `url(${background})`,
         backgroundAttachment: "fixed",
+        border: "0.1px solid black",
       }}
     >
-      <Stack
-        direction="column"
-        justifyContent={"center"}
-        alignItems={"center"}
-        width={"100%"}
-        p={6}
-        spacing={8}
-      >
-        <Heading name="Events"></Heading>
-        <Typography
-          variant="body1"
-          fontSize={"20px"}
-          color={"white"}
-          fontFamily={"Playfair Display"}
-          textAlign={"center"}
-        >
-          Udyamitsav’24 is packed with some of the most adrenaline-inducing
-          events. Have a glimpse of what's to come before we steal the show ;
-        </Typography>
-        <Typography
-          variant="body1"
-          fontSize={"20px"}
-          color={"white"}
-          fontFamily={"Playfair Display"}
-          textAlign={"center"}
-        >
-          Registrations are open for the following events, so what are you
-          waiting for? Register now!
-        </Typography>
-        <Box
-          gap={12}
-          spacing={12}
-          sx={{ display: "flex", flexWrap: "wrap" }}
+      <Navbar>
+        <Stack
+          direction="column"
           justifyContent={"center"}
           alignItems={"center"}
           width={"100%"}
+          p={6}
+          spacing={8}
         >
-          {EVENTS.map((el) => (
-            <Box
-              key={el.index}
-              width={{ xs: "75%", sm: "40%", md: "25%" }}
-              sx={{
-                cursor: "pointer",
-
-                position: "relative",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              <img
-                src={el.img}
-                alt={el.to}
-                style={{ width: "100%", height: "100%" }}
-              />
-
+          <Heading name="Events"></Heading>
+          <Typography
+            variant="body1"
+            fontSize={"20px"}
+            color={"white"}
+            fontFamily={"Playfair Display"}
+            textAlign={"center"}
+          >
+            Udyamitsav’24 is packed with some of the most adrenaline-inducing
+            events. Have a glimpse of what's to come before we steal the show ;
+          </Typography>
+          <Typography
+            variant="body1"
+            fontSize={"20px"}
+            color={"white"}
+            fontFamily={"Playfair Display"}
+            textAlign={"center"}
+          >
+            Registrations are open for the following events, so what are you
+            waiting for? Register now!
+          </Typography>
+          <Box
+            gap={12}
+            spacing={12}
+            sx={{ display: "flex", flexWrap: "wrap" }}
+            justifyContent={"center"}
+            alignItems={"center"}
+            width={"100%"}
+          >
+            {EVENTS.map((el) => (
               <Box
+                key={el.index}
+                width={{ xs: "75%", sm: "40%", md: "25%" }}
                 sx={{
-                  position: "absolute",
-                  width: "80%",
-                  height: "9%",
-                  bottom: "4%",
+                  cursor: "pointer",
+
+                  position: "relative",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
-                <Link to={el.to} target="_blank">
-                  <img
-                    src={register}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                    }}
-                  />
-                </Link>
+                <img
+                  src={el.img}
+                  alt={el.to}
+                  style={{ width: "100%", height: "100%" }}
+                />
+
+                <Box
+                  sx={{
+                    position: "absolute",
+                    width: "80%",
+                    height: "9%",
+                    bottom: "4%",
+                  }}
+                >
+                  <Link to={el.to} target="_blank">
+                    <img
+                      src={register}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                  </Link>
+                </Box>
               </Box>
-            </Box>
-          ))}
-        </Box>
-      </Stack>
+            ))}
+          </Box>
+        </Stack>
+      </Navbar>
     </Box>
   );
 };

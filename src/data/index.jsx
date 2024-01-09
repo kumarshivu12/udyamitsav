@@ -199,18 +199,19 @@ export const LEFT_NAV_LINKS = [
     name: "Speakers",
     to: "/speakers",
   },
+
   {
     index: 2,
-    name: "Events",
-    to: "/events",
+    name: "Our Team",
+    to: "/teams",
   },
 ];
 
 export const RIGHT_NAV_LINKS = [
   {
     index: 0,
-    name: "Our Team",
-    to: "/teams",
+    name: "Events",
+    to: "/events",
   },
   {
     index: 1,

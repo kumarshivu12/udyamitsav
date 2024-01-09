@@ -2,12 +2,14 @@ import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import React from "react";
 import Heading from "../headings/Heading";
 import { useTheme } from "@emotion/react";
+import img from "../../assets/main/convenor.png";
+import reel from "../../assets/main/reel.mp4";
 
 const About = () => {
   const theme = useTheme();
   const isMD = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <Box width={"100%"} py={4} px={{ xs: 2, sm: 4, md: 6, lg: 8 }}>
+    <Box width={"100%"} py={4} px={{ xs: 3, sm: 4, md: 6, lg: 9 }}>
       <Stack
         justifyContent={"center"}
         alignItems={"center"}
@@ -18,17 +20,18 @@ const About = () => {
         <Grid
           container
           width={"100%"}
-          flexDirection={isMD ? "" : "row-reverse"}
+          flexDirection={isMD ? "row" : "column-reverse"}
         >
           <Grid
             item
-            lg={6}
+            lg={7}
             md={6}
             sm={12}
             xs={12}
             justifySelf={"center"}
             alignSelf={"center"}
             textAlign={"center"}
+            my={isMD ? "" : 6}
           >
             <Stack spacing={4}>
               <Typography
@@ -60,7 +63,26 @@ const About = () => {
               </Typography>
             </Stack>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12}></Grid>
+          <Grid
+            item
+            lg={5}
+            md={6}
+            sm={12}
+            xs={12}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            my={isMD ? "" : 6}
+          >
+            <Box width={{ xs: "60%", md: "60%", lg: "50%" }} height={"auto"}>
+              <video width="100%" height="100%" controls>
+                <source src={reel} type="video/mp4" />
+                {/* Your browser does not support the video tag. */}
+              </video>
+            </Box>
+          </Grid>
         </Grid>
       </Stack>
     </Box>

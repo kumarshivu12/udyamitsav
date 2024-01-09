@@ -1,12 +1,5 @@
 export const TEAM = [
   {
-    index: 0,
-    img: premveer,
-    instagram: "",
-    linkedin: "",
-    twitter: "",
-  },
-  {
     index: 1,
     img: prabhnoor,
     instagram: "https://www.instagram.com/prabhnoor572?igsh=M3dscG5kaHk1dGFz",
