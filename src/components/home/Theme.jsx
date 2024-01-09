@@ -14,10 +14,9 @@ const Theme = () => {
       >
         <Heading name="Our Theme"></Heading>
         <Typography
-          variant="body1"
+          variant="subtitle1"
           fontFamily={"Playfair Display"}
           color={"white"}
-          fontSize={"20px"}
         >
           Welcome to the 2nd Edition of the Entrepreneurship Fest at IIT Jammu!
           Our theme, 'Ignite the Leader Within,' is a call to action. In the
@@ -27,10 +26,9 @@ const Theme = () => {
           and inspire the leaders of tomorrow.
         </Typography>
         <Typography
-          variant="body1"
+          variant="subtitle1"
           fontFamily={"Playfair Display"}
           color={"white"}
-          fontSize={"20px"}
         >
           We believe that every individual possesses the potential to lead, and
           this fest is your platform to discover, cultivate, and unleash that

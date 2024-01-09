@@ -43,6 +43,7 @@ const MobileNav = () => {
       <Drawer
         anchor="right"
         width={"100vw"}
+        minHeight={"100vh"}
         open={isOpen}
         onClose={() => setOpen(false)}
         sx={{ backgroundColor: "#444" }}
@@ -53,11 +54,11 @@ const MobileNav = () => {
             sx={{
               background: "black",
               width: "100vw",
-              height: "100vh",
-              border: "0.1px solid black",
+              minHeight: "100vh",
             }}
             justifyContent={"center"}
             alignItems={"center"}
+            pt={"70px"}
           >
             {NAV_LINKS.map((el) => (
               <Link

@@ -31,8 +31,8 @@ const TeamPage = () => {
         >
           <Heading name="Our Team"></Heading>
           {/* <Typography
-          variant="body1"
-          fontSize={"20px"}
+          variant="subtitle1"
+          
           color={"white"}
           fontFamily={"Playfair Display"}
           textAlign={"center"}
@@ -41,8 +41,8 @@ const TeamPage = () => {
           events. Have a glimpse of what's to come before we steal the show ;
         </Typography>
         <Typography
-          variant="body1"
-          fontSize={"20px"}
+          variant="subtitle1"
+          
           color={"white"}
           fontFamily={"Playfair Display"}
           textAlign={"center"}

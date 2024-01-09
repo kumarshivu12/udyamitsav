@@ -29,8 +29,7 @@ const EventPage = () => {
         >
           <Heading name="Events"></Heading>
           <Typography
-            variant="body1"
-            fontSize={"20px"}
+            variant="subtitle1"
             color={"white"}
             fontFamily={"Playfair Display"}
             textAlign={"center"}
@@ -39,8 +38,7 @@ const EventPage = () => {
             events. Have a glimpse of what's to come before we steal the show ;
           </Typography>
           <Typography
-            variant="body1"
-            fontSize={"20px"}
+            variant="subtitle1"
             color={"white"}
             fontFamily={"Playfair Display"}
             textAlign={"center"}

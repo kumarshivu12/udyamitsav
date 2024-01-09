@@ -106,8 +106,8 @@ const GuestPage = () => {
             </Box>
           </Box>
           {/* <Typography
-          variant="body1"
-          fontSize={"20px"}
+          variant="subtitle1"
+          
           color={"white"}
           fontFamily={"Playfair Display"}
           textAlign={"center"}
@@ -116,8 +116,8 @@ const GuestPage = () => {
           events. Have a glimpse of what's to come before we steal the show ;
         </Typography>
         <Typography
-          variant="body1"
-          fontSize={"20px"}
+          variant="subtitle1"
+          
           color={"white"}
           fontFamily={"Playfair Display"}
           textAlign={"center"}

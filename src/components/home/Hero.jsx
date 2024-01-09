@@ -37,7 +37,7 @@ const Hero = () => {
           style={{ width: "100%", height: "auto" }}
         />
       </Box>
-      <Box width={{ xs: "50%", lg: "25%" }} sx={{ zIndex: 2 }}>
+      <Box width={{ xs: "65%", lg: "25%" }} sx={{ zIndex: 2 }}>
         <RegisterButton name="Register Now"></RegisterButton>
       </Box>
     </Stack>

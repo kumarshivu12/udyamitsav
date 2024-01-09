@@ -37,13 +37,12 @@ const Vidhyabhirama = () => {
                 variant="h4"
                 fontFamily={"Playfair Display"}
                 color={"white"}
-                fontSize={"20px"}
                 sx={{ textShadow: "5px 5px 5px #0073e6" }}
               >
                 A New Initiative by Team of MESH & Udyamitsav'24
               </Typography>
               <Typography
-                variant="body1"
+                variant="subtitle1"
                 fontFamily={"Playfair Display"}
                 color={"yellow"}
                 fontSize={"18px"}
@@ -56,13 +55,12 @@ const Vidhyabhirama = () => {
                 variant="h4"
                 fontFamily={"Playfair Display"}
                 color={"white"}
-                fontSize={"20px"}
                 sx={{ textShadow: "5px 5px 5px #0073e6" }}
               >
                 Why Vidhyabhirama?
               </Typography>
               <Typography
-                variant="body1"
+                variant="subtitle1"
                 fontFamily={"Playfair Display"}
                 color={"yellow"}
                 fontSize={"18px"}

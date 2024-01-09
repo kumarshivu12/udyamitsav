@@ -35,20 +35,18 @@ const Message = ({ name, img, heading, message }) => {
           >
             <Stack spacing={4}>
               <Typography
-                variant="body1"
+                variant="subtitle1"
                 fontFamily={"Playfair Display"}
                 color={"white"}
-                fontSize={"20px"}
                 fontWeight={700}
                 sx={{ textShadow: "5px 5px 5px #0073e6" }}
               >
                 {heading}
               </Typography>
               <Typography
-                variant="body1"
+                variant="subtitle1"
                 fontFamily={"Playfair Display"}
                 color={"white"}
-                fontSize={"20px"}
               >
                 {message}
               </Typography>
